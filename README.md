@@ -20,6 +20,7 @@ each Apple only has slight differences (while the core mechanics remain similar)
 
 ```groovy
 repositories {
+    maven { url "http://server.bbkr.space:8081/artifactory/libs-release" }
     maven { url 'https://jitpack.io' }
 }
 ```
