@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "static-content",
+  "version": "${version}",
+  "name": "Static Content",
+  "description": "Wrapper for Static Data that allows for easy registration of game content with cross-mod compatibility.",
+  "authors": [
+    "Draylar"
+  ],
+  "license": "CC0-1.0",
+  "icon": "assets/static-content/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "draylar.staticcontent.StaticContent"
+    ]
+  },
+  "mixins": [
+    "static-content.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.9.0+build.204",
+    "fabric": "*",
+    "minecraft": "1.16.1"
+  }
+}
