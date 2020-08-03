@@ -26,7 +26,8 @@ repositories {
 
 ```groovy
 dependencies {
-    implementation 'com.github.Draylar:static-content:master-SNAPSHOT'
+    modImplementation 'com.github.Draylar:static-content:1.0.0'
+    include 'com.github.Draylar:static-content:1.0.0'
 }
 ```
 
