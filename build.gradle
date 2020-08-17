@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.5.11'
+    id 'fabric-loom' version '0.5-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -18,8 +18,13 @@ repositories {
 }
 
 dependencies {
-    modImplementation "io.github.cottonmc:StaticData:1.1.2"
-    include "io.github.cottonmc:StaticData:1.1.2"
+    modImplementation ("io.github.cottonmc:StaticData:1.1.2") {
+        exclude group: "net.fabricmc.fabric-api"
+    }
+
+    include ("io.github.cottonmc:StaticData:1.1.2") {
+        exclude group: "net.fabricmc.fabric-api"
+    }
 }
 
 dependencies {
