@@ -15,9 +15,6 @@
       "draylar.staticcontent.StaticContent"
     ]
   },
-  "mixins": [
-    "static-content.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=0.9.0+build.204",
     "fabric": "*",
