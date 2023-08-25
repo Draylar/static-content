@@ -20,15 +20,16 @@ each Apple only has slight differences (while the core mechanics remain similar)
 
 ```groovy
 repositories {
-    maven { url "http://server.bbkr.space/artifactory/libs-release" }
-    maven { url 'https://jitpack.io' }
+    maven {
+        url "https://maven.draylar.dev/releases"
+    }
 }
 ```
 
 ```groovy
 dependencies {
-    modImplementation 'com.github.Draylar:static-content:1.0.0'
-    include 'com.github.Draylar:static-content:1.0.0'
+    modImplementation 'draylar:static-content:1.0.2-1.18.2'
+    include 'draylar:static-content:1.0.2-1.18.2'
 }
 ```
 
